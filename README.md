@@ -6,10 +6,6 @@ This project demonstrates a basic data ingestion pipeline using Spring Boot for 
 
 zeotap-assignment/ ├── backend/ # Spring Boot Application │ ├── src/ │ ├── pom.xml │ └── ... ├── frontend/ # React or frontend of your choice │ ├── public/ │ ├── src/ │ ├── package.json │ └── ... └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## ⚙️ Backend Setup (Spring Boot)
@@ -24,48 +20,46 @@ Edit
 1. Navigate to backend folder:
    ```bash
    cd backend
-Build the project:
 
-bash
-Copy
-Edit
+## Build the project:
+
+```bash
 mvn clean install
 Run the Spring Boot application:
+```
 
-bash
-Copy
-Edit
+```bash
 mvn spring-boot:run
 Backend will be available at http://localhost:8081
+```
 
-💻 Frontend Setup
+### 💻 Frontend Setup
 Prerequisites
 Node.js (v16+ recommended)
 
+```bash
 npm or yarn
+```
 
 Setup Instructions
 Navigate to frontend folder:
 
-bash
-Copy
-Edit
+```bash
+
 cd frontend
 Install dependencies:
-
-bash
-Copy
-Edit
+```
+```bash
 npm install
 Run the frontend:
+```
 
-bash
-Copy
-Edit
+```bash
 npm start
+```
 UI will be available at http://localhost:3000
 
-📊 Features
+### 📊 Features
 Upload CSV file path via frontend UI.
 
 Send request to backend to ingest the file.
@@ -73,15 +67,15 @@ Send request to backend to ingest the file.
 Backend parses file and logs each row (mock ClickHouse insert).
 
 📁 Sample Payload
-json
-Copy
-Edit
+```json
 {
   "fileName": "mock/path.csv",
   "delimiter": ",",
   "header": true
 }
-✅ Notes
+```
+
+### ✅ Notes
 Replace mock/path.csv with the absolute path to your CSV file on your system.
 
 No real ClickHouse connection — this mock simulates ingestion pipeline only.
@@ -91,10 +85,3 @@ No real ClickHouse connection — this mock simulates ingestion pipeline only.
 
 ✅ README with setup and run instructions (this file).
 
-yaml
-Copy
-Edit
-
----
-
-Let me know if you want to tweak this based on your actual frontend tech (React, HTML, etc.) or want to add screenshots, too.
