@@ -25,13 +25,14 @@ zeotap-assignment/ ├── backend/ # Spring Boot Application │ ├── sr
 
 ```bash
 mvn clean install
-Run the Spring Boot application:
 ```
+Run the Spring Boot application:
 
 ```bash
 mvn spring-boot:run
-Backend will be available at http://localhost:8081
 ```
+Backend will be available at http://localhost:8081
+
 
 ### 💻 Frontend Setup
 Prerequisites
